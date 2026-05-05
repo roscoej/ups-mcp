@@ -1,0 +1,49 @@
+{
+  "name": "ups-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for UPS shipping, tracking, and logistics APIs",
+  "author": "Jacob Roscoe",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ups-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', '755')\"",
+    "dev": "tsc --watch",
+    "prepare": "npm run build",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "inspector": "npx @modelcontextprotocol/inspector@latest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roscoej/ups-mcp"
+  },
+  "keywords": [
+    "ups",
+    "shipping",
+    "tracking",
+    "mcp",
+    "model-context-protocol",
+    "logistics"
+  ]
+}
