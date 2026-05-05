@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/roscoej/ups-mcp"
+    "url": "git+https://github.com/roscoej/ups-mcp.git"
   },
   "keywords": [
     "ups",
