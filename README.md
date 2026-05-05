@@ -10,8 +10,8 @@ A [Model Context Protocol](https://modelcontextprotocol.io) server for UPS shipp
 
 ### Install in your IDE
 
-[![Install in Cursor](https://img.shields.io/badge/Cursor-Install-0098FF?logo=cursor&logoColor=white)](cursor://anysphere.cursor-deeplink/mcp/install?name=ups&config=%7B%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22ups-mcp%22%5D%2C%22env%22%3A%7B%22UPS_CLIENT_ID%22%3A%22your_client_id%22%2C%22UPS_CLIENT_SECRET%22%3A%22your_client_secret%22%2C%22UPS_ACCOUNT_NUMBER%22%3A%22123456%22%2C%22UPS_ENVIRONMENT%22%3A%22sandbox%22%7D%7D)
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=ups&config=%7B%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22ups-mcp%22%5D%2C%22env%22%3A%7B%22UPS_CLIENT_ID%22%3A%22your_client_id%22%2C%22UPS_CLIENT_SECRET%22%3A%22your_client_secret%22%2C%22UPS_ACCOUNT_NUMBER%22%3A%22123456%22%2C%22UPS_ENVIRONMENT%22%3A%22sandbox%22%7D%7D)
+[![Install in Cursor](https://img.shields.io/badge/Cursor-Install-0098FF?logo=cursor&logoColor=white)](https://cursor.com/link/mcp/install?name=ups&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsInVwcy1tY3AiXSwiZW52Ijp7IlVQU19DTElFTlRfSUQiOiJ5b3VyX2NsaWVudF9pZCIsIlVQU19DTElFTlRfU0VDUkVUIjoieW91cl9jbGllbnRfc2VjcmV0IiwiVVBTX0FDQ09VTlRfTlVNQkVSIjoiMTIzNDU2IiwiVVBTX0VOVklST05NRU5UIjoic2FuZGJveCJ9fQ%3D%3D)
+[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=ups&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsInVwcy1tY3AiXSwiZW52Ijp7IlVQU19DTElFTlRfSUQiOiJ5b3VyX2NsaWVudF9pZCIsIlVQU19DTElFTlRfU0VDUkVUIjoieW91cl9jbGllbnRfc2VjcmV0IiwiVVBTX0FDQ09VTlRfTlVNQkVSIjoiMTIzNDU2IiwiVVBTX0VOVklST05NRU5UIjoic2FuZGJveCJ9fQ%3D%3D)
 
 > After installing, update the environment variables with your [UPS Developer Portal](https://developer.ups.com/get-started) credentials.
 
