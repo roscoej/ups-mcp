@@ -2,6 +2,7 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { UPSHttpClient } from './client/index.js';
 import {
 	addAddressTools,
+	addLabelTools,
 	addLocatorTools,
 	addPickupTools,
 	addRatingTools,
@@ -27,6 +28,7 @@ export function createServer(config: ServerConfig): McpServer {
 	addRatingTools(server, client);
 	addPickupTools(server, client);
 	addLocatorTools(server, client);
+	addLabelTools(server, client);
 
 	return server;
 }

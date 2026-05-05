@@ -23,11 +23,15 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
+    "fast-png": "^8.0.0",
+    "omggif": "^1.0.10",
+    "pdf-lib": "^1.17.1",
     "zod": "^3.24.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.0",
     "@types/node": "^22.0.0",
+    "@types/omggif": "^1.0.5",
     "typescript": "^5.6.0",
     "vitest": "^2.1.0"
   },
