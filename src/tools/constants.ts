@@ -8,6 +8,7 @@ export const API_VERSIONS = {
 	TIME_IN_TRANSIT: 'v1',
 	PICKUP: 'v1',
 	LOCATOR: 'v2',
+	LABEL_RECOVERY: 'v2409',
 } as const;
 
 // ─── Service Codes ───────────────────────────────────────────────────────────

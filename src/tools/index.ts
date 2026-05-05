@@ -4,6 +4,7 @@ export { addShippingTools } from './shipping.js';
 export { addRatingTools } from './rating.js';
 export { addPickupTools } from './pickup.js';
 export { addLocatorTools } from './locator.js';
+export { addLabelTools } from './labels.js';
 
 export {
 	API_VERSIONS,
