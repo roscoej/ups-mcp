@@ -8,12 +8,28 @@
 
 A [Model Context Protocol](https://modelcontextprotocol.io) server for UPS shipping and logistics APIs. Enables AI agents to create shipments, track packages, get rates, validate addresses, schedule pickups, and find UPS locations.
 
-### Install in your IDE
+### Quick Install
 
-[![Install in Cursor](https://img.shields.io/badge/Cursor-Install-0098FF?logo=cursor&logoColor=white)](https://cursor.com/link/mcp/install?name=ups&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsInVwcy1tY3AiXSwiZW52Ijp7IlVQU19DTElFTlRfSUQiOiJ5b3VyX2NsaWVudF9pZCIsIlVQU19DTElFTlRfU0VDUkVUIjoieW91cl9jbGllbnRfc2VjcmV0IiwiVVBTX0FDQ09VTlRfTlVNQkVSIjoiMTIzNDU2IiwiVVBTX0VOVklST05NRU5UIjoic2FuZGJveCJ9fQ%3D%3D)
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=ups&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsInVwcy1tY3AiXSwiZW52Ijp7IlVQU19DTElFTlRfSUQiOiJ5b3VyX2NsaWVudF9pZCIsIlVQU19DTElFTlRfU0VDUkVUIjoieW91cl9jbGllbnRfc2VjcmV0IiwiVVBTX0FDQ09VTlRfTlVNQkVSIjoiMTIzNDU2IiwiVVBTX0VOVklST05NRU5UIjoic2FuZGJveCJ9fQ%3D%3D)
+Add to your MCP config (`~/.cursor/mcp.json`, `.cursor/mcp.json`, or `claude_desktop_config.json`):
 
-> After installing, update the environment variables with your [UPS Developer Portal](https://developer.ups.com/get-started) credentials.
+```json
+{
+  "mcpServers": {
+    "ups": {
+      "command": "npx",
+      "args": ["-y", "ups-mcp"],
+      "env": {
+        "UPS_CLIENT_ID": "your_client_id",
+        "UPS_CLIENT_SECRET": "your_client_secret",
+        "UPS_ACCOUNT_NUMBER": "123456",
+        "UPS_ENVIRONMENT": "sandbox"
+      }
+    }
+  }
+}
+```
+
+Get your credentials at the [UPS Developer Portal](https://developer.ups.com/get-started).
 
 ## Tools
 
@@ -58,47 +74,12 @@ npm install -g ups-mcp
 | `UPS_ENVIRONMENT` | No | `sandbox` (default) or `production` |
 | `UPS_ACCOUNT_NUMBER` | No | 6-digit UPS account (required for shipping/rating) |
 
-### Cursor
-
-Add to `.cursor/mcp.json`:
-
-```json
-{
-  "mcpServers": {
-    "ups": {
-      "command": "npx",
-      "args": ["ups-mcp"],
-      "env": {
-        "UPS_CLIENT_ID": "your_client_id",
-        "UPS_CLIENT_SECRET": "your_client_secret",
-        "UPS_ACCOUNT_NUMBER": "123456",
-        "UPS_ENVIRONMENT": "sandbox"
-      }
-    }
-  }
-}
-```
-
-### Claude Desktop
-
-Add to `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "ups": {
-      "command": "npx",
-      "args": ["ups-mcp"],
-      "env": {
-        "UPS_CLIENT_ID": "your_client_id",
-        "UPS_CLIENT_SECRET": "your_client_secret",
-        "UPS_ACCOUNT_NUMBER": "123456",
-        "UPS_ENVIRONMENT": "sandbox"
-      }
-    }
-  }
-}
-```
+| Client | Config file |
+|--------|-------------|
+| Cursor (project) | `.cursor/mcp.json` |
+| Cursor (global) | `~/.cursor/mcp.json` |
+| Claude Desktop | `claude_desktop_config.json` |
+| VS Code | `.vscode/mcp.json` |
 
 ## Usage Examples
 
