@@ -170,6 +170,21 @@ src/
 
 Your API credentials are sensitive. Never commit them to version control. Use environment variables or a secrets manager.
 
+## Disclaimer
+
+This project is an **independent, unofficial, third-party tool**. It is not affiliated with, endorsed by, sponsored by, or in any way officially connected to United Parcel Service, Inc. (UPS) or any of its subsidiaries.
+
+"UPS" and the UPS brandmark are registered trademarks of United Parcel Service of America, Inc. All other trademarks are property of their respective owners. Use of these names is for identification and interoperability purposes only and does not imply endorsement.
+
+This software is provided "AS IS", without warranty of any kind. You are solely responsible for:
+
+- Complying with the [UPS Technology Agreement](https://developer.ups.com) and all applicable UPS terms of service, rate limits, and acceptable-use policies.
+- Securing your API credentials and UPS account.
+- All activity conducted through your UPS account via this tool.
+- Compliance with all applicable laws and regulations in your jurisdiction.
+
+The authors and contributors accept no liability for damages arising from the use of this software or the UPS APIs accessed through it.
+
 ## Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
