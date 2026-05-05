@@ -66,7 +66,7 @@ export function addShippingTools(server: McpServer, client: UPSHttpClient): void
 						},
 						Service: { Code: service, Description: '' },
 						Package: packages.map((pkg) => ({
-							PackagingType: { Code: pkg.packaging, Description: '' },
+							Packaging: { Code: pkg.packaging ?? '02', Description: '' },
 							Dimensions: pkg.length
 								? buildDimensions(pkg.length, pkg.width, pkg.height)
 								: undefined,
