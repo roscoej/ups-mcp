@@ -2,8 +2,18 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js 20+](https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg)](https://nodejs.org)
+[![MCP](https://img.shields.io/badge/MCP-compatible-8A2BE2)](https://modelcontextprotocol.io)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6+-3178C6?logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![npm](https://img.shields.io/npm/v/ups-mcp)](https://www.npmjs.com/package/ups-mcp)
 
 A [Model Context Protocol](https://modelcontextprotocol.io) server for UPS shipping and logistics APIs. Enables AI agents to create shipments, track packages, get rates, validate addresses, schedule pickups, and find UPS locations.
+
+### Install in your IDE
+
+[![Install in Cursor](https://img.shields.io/badge/Cursor-Install-0098FF?logo=cursor&logoColor=white)](cursor://anysphere.cursor-deeplink/mcp/install?name=ups&config=%7B%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22ups-mcp%22%5D%2C%22env%22%3A%7B%22UPS_CLIENT_ID%22%3A%22your_client_id%22%2C%22UPS_CLIENT_SECRET%22%3A%22your_client_secret%22%2C%22UPS_ACCOUNT_NUMBER%22%3A%22123456%22%2C%22UPS_ENVIRONMENT%22%3A%22sandbox%22%7D%7D)
+[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=ups&config=%7B%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22ups-mcp%22%5D%2C%22env%22%3A%7B%22UPS_CLIENT_ID%22%3A%22your_client_id%22%2C%22UPS_CLIENT_SECRET%22%3A%22your_client_secret%22%2C%22UPS_ACCOUNT_NUMBER%22%3A%22123456%22%2C%22UPS_ENVIRONMENT%22%3A%22sandbox%22%7D%7D)
+
+> After installing, update the environment variables with your [UPS Developer Portal](https://developer.ups.com/get-started) credentials.
 
 ## Tools
 

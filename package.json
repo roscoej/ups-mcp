@@ -43,7 +43,14 @@
     "shipping",
     "tracking",
     "mcp",
+    "mcp-server",
     "model-context-protocol",
-    "logistics"
+    "ai",
+    "claude",
+    "cursor",
+    "logistics",
+    "address-validation",
+    "label",
+    "rates"
   ]
 }
